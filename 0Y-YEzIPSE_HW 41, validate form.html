@@ -1,0 +1,50 @@
+<html>
+        <body><html>
+    <head>
+    <script> 
+        function validateForm(){
+            var x=document.forms["myForm"]["pass"].value;
+            var y=document.forms["myForm"]["Confirmpass"].value;
+            if(x!=y){
+                alert("ERROR")
+                return false;
+            }
+            else{
+                alert("Succesful")
+                return true;
+            }
+        }
+        </script> 
+        </head>
+    <body> 
+        <h1> HTML Form </h1>
+        <form onsubmit="return validateForm()" name="myForm"> 
+            First Name:<br/>
+            <input type="text" name="fname" required> <br/>
+            Last Name:<br/>
+            <input type="text" name="lname" required> <br/>
+            Email:<br/>
+            <input type="text" name="email" required> <br/>
+            User_Id:<br/>
+            <input type="text" name="User_id" required> <br/>
+            Password:<br/>
+            <input type="password" name="pass" required> <br/>
+            Confirm Password:<br/>
+            <input type="password" name="Confirmpass" required> <br/> <br/> 
+            <input type="submit" name="submit"> <br/>
+        </form>
+    </body>
+</html></body>
+        <style>body{
+    background-color: chartreuse;
+    text-align: center;
+}
+h1{
+    background-color: cyan;
+    border: 9px groove indianred;
+    display: inline-block;
+    position: static;
+}
+</style>
+        <script></script>
+      </html>
